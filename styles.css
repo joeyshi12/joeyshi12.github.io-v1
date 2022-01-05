@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'M Plus Rounded 1c';
+    src: url('assets/fonts/MPLUSRounded1c-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+:root {
+    font-family: Arial, sans-serif;
+}
+html body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+}
+.navbar {
+    background-color: antiquewhite;
+    max-width: 18rem;
+    position: fixed;
+}
+.navbar-nav {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.nav-item {
+    padding-left: 2rem;
+    margin: 0.5rem;
+    width: 80%;
+    background: aliceblue;
+    border-radius: 25px;
+}
+.nav-item .icon {
+    font-size: 2rem;
+}
+.nav-item:last-child {
+    margin-top: auto;
+}
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 4.5rem;
+    text-decoration: none;
+    filter: grayscale(100%);
+}
+.nav-item-text {
+    display: inline;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.header {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    background: aquamarine;
+    border-radius: 25px;
+    justify-content: center;
+}
+.header-text * {
+    padding: 0;
+    margin: 0;
+}
+.page-body {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    overflow: auto;
+}
+.page-body-contents {
+    margin-top: 2rem;
+    max-width: 42rem;
+}
+.title {
+    font-family: "M Plus Rounded 1c", serif;
+    font-size: 32px;
+}
+.section-header {
+    font-family: "M Plus Rounded 1c", serif;
+}
+.profile-picture {
+    border-radius: 50%;
+    height: 90px;
+    margin-left: 4rem;
+}
+.section-body {
+    margin-left: 1.6rem;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+.button-group {
+    display: flex;
+    justify-content: center;
+}
