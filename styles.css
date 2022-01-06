@@ -7,11 +7,11 @@
 :root {
     font-family: Arial, sans-serif;
     font-size: 18px;
+    --bg-secondary: #dff0ff;
 }
 html body {
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
 }
 body::-webkit-scrollbar {
     width: 0.25rem;
@@ -41,7 +41,7 @@ body::-webkit-scrollbar-thumb {
     padding-left: 2rem;
     margin: 0.5rem;
     width: 80%;
-    background: #dff0ff;
+    background: var(--bg-secondary);
     border-radius: 25px;
 }
 .nav-item .icon {
@@ -63,8 +63,8 @@ body::-webkit-scrollbar-thumb {
     text-decoration: none;
     color: black
 }
-.nav-item-text {
-    display: inline;
+.link-text {
+    display: block;
     margin-left: 1rem;
     margin-right: 1rem;
 }
@@ -72,7 +72,7 @@ body::-webkit-scrollbar-thumb {
     padding: 1rem 0 1rem 0;
     display: flex;
     flex-direction: row;
-    background: #dff0ff;
+    background: var(--bg-secondary);
     border-radius: 25px;
     justify-content: center;
 }
@@ -122,4 +122,50 @@ section {
 .button-group {
     display: flex;
     justify-content: center;
+}
+@media only screen and (max-width: 1000px) {
+    .navbar {
+        bottom: 0;
+        width: 100vw;
+        height: 5rem;
+        padding-bottom: 1rem;
+    }
+    .navbar-nav {
+        justify-content: center;
+        flex-direction: row;
+    }
+    .link-text {
+        display: none;
+    }
+    .nav-item {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 5rem;
+    }
+    .nav-item:last-child {
+        display: none;
+    }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1320px) {
+    .navbar {
+        width: 8rem;
+    }
+    .navbar-nav {
+        justify-content: center;
+    }
+    .link-text {
+        display: none;
+    }
+    .nav-item {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 5rem;
+    }
+    .nav-item:last-child {
+        display: none;
+    }
 }
