@@ -32,16 +32,15 @@ body::-webkit-scrollbar-thumb {
 .navbar-nav {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
 }
 .nav-item {
-    padding: 1rem 0 1rem 2rem;
     margin: 0.5rem;
-    width: 80%;
+    width: 100%;
     background: var(--bg-secondary);
     border-radius: 25px;
 }
@@ -53,7 +52,7 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     text-decoration: none;
     color: black;
-    transition: 0.5s;
+    padding: 1rem 0 1rem 2rem;
 }
 .link-text {
     display: block;
@@ -197,16 +196,20 @@ section {
     .navbar-nav {
         justify-content: center;
         flex-direction: row;
+        height: 100%;
+        width: available;
     }
     .link-text {
         display: none;
     }
     .nav-item {
-        padding: 1rem;
+        max-width: 8rem;
+    }
+    .nav-link {
         display: flex;
         align-items: center;
         justify-content: center;
-        max-width: 2.8rem;
+        padding: 1rem 0;
     }
     .nav-item:last-child {
         display: none;
@@ -230,12 +233,11 @@ section {
     .link-text {
         display: none;
     }
-    .nav-item {
-        padding: 1rem;
+    .nav-link {
         display: flex;
-        align-items: center;
         justify-content: center;
-        max-width: 2.8rem;
+        align-items: center;
+        padding: 2rem 0;
     }
     .nav-item:last-child {
         display: none;
@@ -248,7 +250,7 @@ section {
     .nav-item:last-child {
         margin-top: auto;
         margin-bottom: 1rem;
-        padding: 1rem;
+        padding: 1rem 0;
         display: flex;
         justify-content: center;
         align-items: center;
