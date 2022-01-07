@@ -39,7 +39,7 @@ body::-webkit-scrollbar-thumb {
     height: 100%;
 }
 .nav-item {
-    padding-left: 2rem;
+    padding: 1rem 0 1rem 2rem;
     margin: 0.5rem;
     width: 80%;
     background: var(--bg-secondary);
@@ -48,19 +48,9 @@ body::-webkit-scrollbar-thumb {
 .nav-item .icon {
     font-size: 2rem;
 }
-.nav-item:first-child {
-    margin-top: 1rem;
-}
-.nav-item:last-child {
-    margin-top: auto;
-    margin-bottom: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
 .nav-link {
     display: flex;
     align-items: center;
-    height: 4.5rem;
     text-decoration: none;
     color: black;
     transition: 0.5s;
@@ -86,7 +76,6 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5rem;
     height: 100%;
 }
 .title {
@@ -144,11 +133,11 @@ section {
         display: none;
     }
     .nav-item {
-        padding: 0;
+        padding: 1rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        max-width: 5rem;
+        max-width: 2.8rem;
     }
     .nav-item:last-child {
         display: none;
@@ -162,6 +151,69 @@ section {
         margin-top: 1rem;
     }
 }
+.repo-cards {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.repo-card {
+    border-color: #d0d7de;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 0.5rem;
+    font-size: 15px;
+    max-width: 16rem;
+}
+.repo-header {
+    font-size: 18px;
+}
+.repo-link {
+    text-decoration: none;
+    color: #0969da;
+}
+.repo-link:hover {
+    text-decoration: underline;
+}
+.python-language-dot {
+    background: #3572a5;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px;
+    top: 1px;
+    display: inline-block
+}
+.typescript-language-dot {
+    background: #2b7489;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px;
+    top: 1px;
+    display: inline-block
+}
+.vimscript-language-dot {
+    background: #1a9f4b;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px;
+    top: 1px;
+    display: inline-block
+}
+.java-language-dot {
+    background: #b07218;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px;
+    top: 1px;
+    display: inline-block
+}
 @media only screen and (min-width: 1000px) and (max-width: 1319px) {
     .navbar {
         width: 8rem;
@@ -173,17 +225,26 @@ section {
         display: none;
     }
     .nav-item {
-        padding: 0;
+        padding: 1rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 5rem;
+        max-width: 2.8rem;
     }
     .nav-item:last-child {
         display: none;
     }
 }
 @media only screen and (min-width: 1320px) {
+    .nav-item:first-child {
+        margin-top: 1rem;
+    }
+    .nav-item:last-child {
+        margin-top: auto;
+        margin-bottom: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
     .nav-link:before {
         content: '»';
         font-size: 2rem;
