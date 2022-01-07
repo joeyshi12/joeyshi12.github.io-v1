@@ -95,7 +95,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2rem;
+    padding: 1rem;
     max-width: 40rem;
     height: 100%;
 }
