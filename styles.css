@@ -186,7 +186,7 @@ section {
     top: 1px;
     display: inline-block
 }
-@media only screen and (max-width: 999px) {
+@media only screen and (max-width: 1019px) {
     .navbar {
         bottom: 0;
         width: 100vw;
@@ -223,7 +223,7 @@ section {
         margin-top: 1rem;
     }
 }
-@media only screen and (min-width: 1000px) and (max-width: 1319px) {
+@media only screen and (min-width: 1020px) and (max-width: 1319px) {
     .navbar {
         width: 8rem;
     }
