@@ -62,7 +62,20 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     height: 4.5rem;
     text-decoration: none;
-    color: black
+    color: black;
+    transition: 0.5s;
+}
+.nav-link:before {
+    content: '»';
+    font-size: 2rem;
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+    opacity: 0;
+}
+.nav-link:hover:before {
+    padding-right: 1rem;
+    opacity: 1;
 }
 .link-text {
     display: block;
@@ -119,6 +132,7 @@ section {
     padding: 12px 25px;
     text-align: center;
     text-decoration: none;
+    transition: 0.5s;
 }
 .button:hover {
     background: #056f9d;
