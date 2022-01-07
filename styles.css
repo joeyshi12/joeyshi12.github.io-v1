@@ -90,7 +90,6 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
     height: 100%;
-    padding-bottom: 5rem;
 }
 
 .title {
@@ -231,6 +230,10 @@ section {
         flex-direction: row;
         height: 100%;
         width: available;
+    }
+
+    .page-body {
+        padding-bottom: 5rem;
     }
 
     .link-text {
