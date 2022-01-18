@@ -76,7 +76,7 @@ html body {
     display: flex;
     background: var(--bg-secondary);
     border-radius: 25px;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .page-body {
@@ -105,7 +105,6 @@ html body {
     border-radius: 50%;
     width: 90px;
     height: 90px;
-    margin-left: 4rem;
 }
 
 section {
@@ -113,7 +112,7 @@ section {
     flex-direction: column;
     justify-content: center;
     padding: 1rem;
-    max-width: 40rem;
+    max-width: 32rem;
     height: 100%;
 }
 
@@ -145,6 +144,7 @@ section {
     margin: 0;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .repo-card {
@@ -153,9 +153,9 @@ section {
     border-width: 1px;
     border-radius: 6px;
     padding: 1rem;
-    margin: 0.5rem;
+    margin: 0.2rem;
     font-size: 15px;
-    max-width: 16rem;
+    max-width: 13rem;
     display: flex;
     flex-direction: column;
 }
@@ -217,7 +217,7 @@ section {
     display: inline-block
 }
 
-@media only screen and (max-width: 1019px) {
+@media only screen and (max-width: 889px) {
     .navbar {
         bottom: 0;
         width: 100vw;
@@ -267,7 +267,7 @@ section {
     }
 }
 
-@media only screen and (min-width: 1020px) and (max-width: 1319px) {
+@media only screen and (min-width: 890px) and (max-width: 1159px) {
     .navbar {
         width: 8rem;
     }
@@ -292,7 +292,7 @@ section {
     }
 }
 
-@media only screen and (min-width: 1320px) {
+@media only screen and (min-width: 1160px) {
     .nav-item:first-child {
         margin-top: 1rem;
     }
