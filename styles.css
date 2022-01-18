@@ -268,7 +268,7 @@ section {
     }
 }
 
-@media only screen and (min-width: 890px) and (max-width: 1159px) {
+@media only screen and (min-width: 890px) and (max-width: 1179px) {
     .navbar {
         width: 8rem;
     }
@@ -293,7 +293,7 @@ section {
     }
 }
 
-@media only screen and (min-width: 1160px) {
+@media only screen and (min-width: 1180px) {
     .nav-item:first-child {
         margin-top: 1rem;
     }
