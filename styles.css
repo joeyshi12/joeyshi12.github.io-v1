@@ -174,42 +174,11 @@ section {
     text-decoration: underline;
 }
 
-.repo-main-language {
+.repo-language {
     margin-top: auto;
 }
 
-.python-language-dot {
-    background: #3572a5;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    border: 1px;
-    top: 1px;
-    display: inline-block
-}
-
-.typescript-language-dot {
-    background: #2b7489;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    border: 1px;
-    top: 1px;
-    display: inline-block
-}
-
-.vimscript-language-dot {
-    background: #1a9f4b;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    border: 1px;
-    top: 1px;
-    display: inline-block
-}
-
-.java-language-dot {
-    background: #b07218;
+.repo-language-color {
     width: 12px;
     height: 12px;
     border-radius: 50%;
