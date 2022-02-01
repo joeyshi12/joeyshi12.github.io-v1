@@ -8,13 +8,33 @@
 :root {
     font-family: Arial, sans-serif;
     font-size: 18px;
-    --bg-secondary: #b7d9f7;
 }
 
 html body {
     margin: 0;
     padding: 0;
     min-height: 100%;
+    background: var(--bg);
+    color: var(--fg);
+    transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+}
+
+.light {
+    --bg: white;
+    --fg: black;
+    --bg-secondary: #b7d9f7;
+    --bg-button: #0179ad;
+    --bg-button-hover: #00618b;
+    --link-color: #0969da;
+}
+
+.dark {
+    --bg: #181a1b;
+    --fg: #e8e6e3;
+    --bg-secondary: #2f3234;
+    --bg-button: #01618a;
+    --bg-button-hover: #004e6f;
+    --link-color: #4ba8f8;
 }
 
 *::-webkit-scrollbar {
@@ -61,7 +81,7 @@ html body {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: black;
+    color: var(--fg);
     padding: 1rem 0 1rem 2rem;
 }
 
@@ -122,7 +142,7 @@ section {
 }
 
 .button {
-    background: #0179ad;
+    background: var(--bg-button);
     border-radius: 8px;
     color: white;
     padding: 12px 25px;
@@ -131,7 +151,7 @@ section {
 }
 
 .button:hover {
-    background: #00618b;
+    background: var(--bg-button-hover);
 }
 
 .button-group {
@@ -167,7 +187,7 @@ section {
 
 .repo-link {
     text-decoration: none;
-    color: #0969da;
+    color: var(--link-color);
 }
 
 .repo-link:hover {
