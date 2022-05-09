@@ -23,7 +23,7 @@
 % \usepackage[sfdefault]{FiraSans}
 % \usepackage[sfdefault]{roboto}
 % \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
+\usepackage[default]{sourcesanspro}
 
 % serif
 % \usepackage{CormorantGaramond}
@@ -103,77 +103,54 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \begin{document}
 
 %----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
 \begin{center}
-    {\Huge \scshape First Last} \\ \vspace{1pt}
-    123 Street Name, Town, State 12345 \\ \vspace{1pt}
-    \small \raisebox{-0.1\height}\faPhone\ 123-456-7890 ~ \href{mailto:x@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{email@gmail.com}} ~
-    \href{https://linkedin.com/in//}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/username}}  ~
-    \href{https://github.com/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/username}}
+    {\Huge \scshape Joey Shi} \\ \vspace{1pt}
+    \small
+    \href{https://joeyshi.com}{\raisebox{-0.1\height}\faUser\ \underline{joeyshi.com}} ~
+    \href{mailto:joeyshi12@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{joeyshi12@gmail.com}} ~
+    \href{https://linkedin.com/in/joeyshi12/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/joeyshi12}}  ~
+    \href{https://github.com/joeyshi12}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/joeyshi12}}
     \vspace{-8pt}
 \end{center}
 
-
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {State University}{Sep. 2017 -- May 2021}
-      {Bachelor of Science in Computer Science}{City, State}
-  \resumeSubHeadingListEnd
-
-%------RELEVANT COURSEWORK-------
-\section{Relevant Coursework}
-    %\resumeSubHeadingListStart
-        \begin{multicols}{4}
-            \begin{itemize}[itemsep=-5pt, parsep=3pt]
-                \item\small Data Structures
-                \item Software Methodology
-                \item Algorithms Analysis
-                \item Database Management
-                \item Artificial Intelligence
-                \item Internet Technology
-                \item Systems Programming
-                \item Computer Architecture
-            \end{itemize}
-        \end{multicols}
-        \vspace*{2.0\multicolsep}
-    %\resumeSubHeadingListEnd
-
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, JavaScript, TypeScript, C, C++, Bash, Scala, Java, HTML, CSS, SQL} \\
+     \textbf{Frameworks/Libraries}{: Angular, Express, Socket.IO, React, Flask, Numpy, Matplotlib, ScalaTest, Jasmine, PyTest} \\
+     \textbf{Tools/Technologies}{: Git, Linux, Vim, Android Studio, MATLAB, Microsoft Excel, Docker} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Electronics Company}{May 2020 -- August 2020}
-      {Software Engineer Intern}{City, State}
+      {Visier Inc.}{Jan 2021 -- Dec 2021}
+      {Software Developer Intern}{Vancouver, BC}
       \resumeItemListStart
-        \resumeItem{Developed a service to automatically perform a set of unit tests daily on a product in development in order to decrease time needed for team members to identify and fix bugs/issues.}
-        \resumeItem{Incorporated scripts using Python and PowerShell to aggregate XML test results into an organized format and to load the latest build code onto the hardware, so that daily testing can be performed.}
-        \resumeItem{Utilized Jenkins to provide a continuous integration service in order to automate the entire process of loading the latest build code and test files, running the tests, and generating a report of the results once per day.}
-        \resumeItem{Explored ways to visualize and send a daily report of test results to team members  using HTML, Javascript, and CSS.}
+        \resumeItem{Worked in full-stack web development using tools, such as Scala and Angular.}
+        \resumeItem{Implemented Angular UI components for listing and configuring hierarchical tenant content packages.}
+        \resumeItem{Built a Scala backend API with a partner for reporting and correcting data issues in tenant data versions.}
+        \resumeItem{Mentored other co-op students on debugging and traversing large code repositories.}
+        \resumeItem{Wrote and fixed extensive unit tests in ScalaTest and Jasmine.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Startup, Inc}{May 2019 -- August 2019}
-      {Front End Developer Intern}{City, State}
+      {University of British Columbia}{Jul 2020 -- Dec 2020}
+      {WeBWorK Content Developer}{Vancouver, BC}
       \resumeItemListStart
-        \resumeItem{Assisted in development of the front end of a mobile application for iOS/Android using Dart and the Flutter framework.}
-        \resumeItem{Worked with Google Firebase to manage user inputted data across multiple platforms including web and mobile apps.}
-        \resumeItem{Collaborated with team members using version control systems such as Git to organize modifications and assign tasks.}
-        \resumeItem{Utilized Android Studio as a development environment in order to visualize the application in both iOS and Android.}
+        \resumeItem{Implemented WeBWorK questions in Perl for UBC calculus assignments and exams.}
+        \resumeItem{Collaborated with multiple professors to improve exam length, difficulty, and clarity.}
+        \resumeItem{Explored new ways of incorporating visuals and animations into questions using JavaScript and the Desmos API.}
     \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -184,58 +161,64 @@
     \vspace{-5pt}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Gym Reservation Bot} $|$ \emph{Python, Selenium, Google Cloud Console}}{January 2021}
+          {\textbf{Differential Equation Solver} $|$ \emph{Python, Matplotlib, Tkinter}}{Dec 2019 -- Present}
           \resumeItemListStart
-            \resumeItem{Developed an automatic bot using Python and Google Cloud Console to register myself for a timeslot at my school gym.}
-            \resumeItem{Implemented Selenium to create an instance of Chrome in order to interact with the correct elements of the web page.}
-            \resumeItem{Created a Linux virtual machine to run on Google Cloud so that the program is able to run everyday from the cloud.}
-            \resumeItem{Used Cron to schedule the program to execute automatically at 11 AM every morning so a reservation is made for me.}
+            \resumeItem{Implemented efficient finite difference algorithms to solve ordinary and partial differential equations.}
+            \resumeItem{Designed a graphical user interface in Tkinter and added animated plots for visualizing the generated solutions.}
+            \resumeItem{Built a CI/CD pipeline with PyTest, Tox, and Github Actions.}
+            \resumeItem{Published the application on the Python Package Index.}
           \resumeItemListEnd
           \vspace{-13pt}
       \resumeProjectHeading
-          {\textbf{Ticket Price Calculator App} $|$ \emph{Java, Android Studio}}{November 2020}
+          {\textbf{Multiplayer Browser Platformer} $|$ \emph{Angular, Node, Socket.IO, Docker}}{Dec 2021 -- Present}
           \resumeItemListStart
-            \resumeItem{Created an Android application using Java and Android Studio to calculate ticket prices for trips to museums in NYC.}
-            \resumeItem{Processed user inputted information in the back-end of the app to return a subtotal price based on the tickets selected.}
-            \resumeItem{Utilized the layout editor to create a UI for the application in order to allow different scenes to interact with each other.}
+            \resumeItem{Designed and deployed a real-time multiplayer browser platformer on Heroku.}
+            \resumeItem{Build a backend web socket API to update and broadcast player data.}
+            \resumeItem{Implemented logic for player movement, animation, 2D physics, map design, and tile collision.}
+            \resumeItem{Containerized the application with Docker and pushed an image to the Docker Hub registry.}
           \resumeItemListEnd
           \vspace{-13pt}
           \resumeProjectHeading
-          {\textbf{Transaction Management GUI} $|$ \emph{Java, Eclipse, JavaFX}}{October 2020}
+          {\textbf{Linux Desktop Environment} $|$ \emph{Arch Linux, Zsh, Vim}}{Mar 2021 -- Present}
           \resumeItemListStart
-            \resumeItem{Designed a sample banking transaction system using Java to simulate the common functions of using a bank account.}
-            \resumeItem{Used JavaFX to create a GUI that supports actions such as creating an account, deposit, withdraw, list all acounts, etc.}
-            \resumeItem{Implemented object-oriented programming practices such as inheritance to create different account types and databases.}
+            \resumeItem{Configured an efficient keyboard-based tiling desktop environment from scratch using Xorg and BSPWM.}
+            \resumeItem{Wrote shell scripts for automating installing assets and linking dotfiles.}
+            \resumeItem{Automated complex multistep desktop actions by writing shell scripts for SXHKD hotkeys.}
+            \resumeItem{Researched and documented how to set up network, bluetooth, speakers, and display monitors in a Github repo}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          \resumeProjectHeading
+          {\textbf{Trivia Train} $|$ \emph{Java, Android Studio}}{Dec 2019}
+          \resumeItemListStart
+            \resumeItem{Requests and processes JSON data from the Open Trivia API to run a high-score based quiz game.}
+            \resumeItem{Wrote simple layouts in xml for user interactions.}
+            \resumeItem{Implemented local high score caching.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 \vspace{-15pt}
 
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of British Columbia}{Sep 2018 -- May 2023}
+      {Bachelor of Science $|$ Combined Major in Computer Science and Math}{Vancouver, BC}
+      \resumeItemListStart
+        \resumeItem{Cumulative GPA: 91.1\%}
+        \resumeItem{Dean's Honour List (2018 -- 2021); Science Scholar (2019)}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
 
-%
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: Python, Java, C, HTML/CSS, JavaScript, SQL} \\
-     \textbf{Developer Tools}{: VS Code, Eclipse, Google Cloud Platform, Android Studio} \\
-     \textbf{Technologies/Frameworks}{: Linux, Jenkins, GitHub, JUnit, WordPress} \\
-    }}
- \end{itemize}
- \vspace{-16pt}
-
-
-%-----------INVOLVEMENT---------------
-\section{Leadership / Extracurricular}
-    \resumeSubHeadingListStart
-        \resumeSubheading{Fraternity}{Spring 2020 -- Present}{President}{University Name}
-            \resumeItemListStart
-                \resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
-                \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
-                \resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
-            \resumeItemListEnd
-
-    \resumeSubHeadingListEnd
-
+%---------SCHOLARSHIPS---------
+\section{Scholarships}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Stanley M. Grant Scholarship in Mathematics}}{Jan 2021}
+    \resumeProjectHeading
+      {\textbf{Charles and Jane Banks Scholarship}}{Sep 2020}
+    \resumeProjectHeading
+      {\textbf{Trek Excellence Scholarship}}{Aug 2020}
+  \resumeSubHeadingListEnd
 
 \end{document}
 
