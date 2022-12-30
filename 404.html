@@ -14,14 +14,13 @@
 <div class="page-body">
     <h2 class=title>404</h2>
     <img src="/assets/crying_penguin.jpg" width="300" style="margin: 1rem" alt="crying_penguin"/>
-    <p id="message"></p>
+    <p>The requested URL <code id="url" style="background-color: #e2e6ea"></code> was not found</p>
     <div class="button-group">
         <a class=button href="/">Go back to portfolio</a>
     </div>
-    <script>
-        document.getElementById("message").innerHTML =
-            `The requested URL <code style="background-color: #e2e6ea">${window.location.pathname}</code> was not found`;
-    </script>
 </div>
+<script>
+    document.getElementById("url").textContent = window.location.pathname;
+</script>
 </body>
 </html>
