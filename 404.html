@@ -8,13 +8,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            max-width: 18rem;
+            padding: 1rem 1rem 4rem 1rem;
+        }
+        .title {
+            padding: 0;
+            margin: 0 0 1rem 0;
+        }
+        #url {
+            color: var(--fg);
+            background-color: #e2e6ea;
+            padding: .2em .4em;
+            border-radius: 6px;
+            font-size: 85%;
+            font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+        }
+        @media (prefers-color-scheme: dark) {
+            #url {
+                background-color: #26292b;
+            }
+        }
+    </style>
 </head>
 <body>
-<div class="page-body">
+<div class="container">
     <h2 class=title>404</h2>
-    <img src="/assets/crying_penguin.jpg" width="300" style="margin: 1rem" alt="crying_penguin"/>
-    <p>The requested URL <code id="url" style="background-color: #e2e6ea"></code> was not found</p>
+    <img class="404-image" src="/assets/crying_penguin.jpg" width="100%" alt="crying_penguin"/>
+    <p>The requested URL <code id="url"></code> was not found</p>
     <div class="button-group">
         <a class=button href="/">Go back to portfolio</a>
     </div>
